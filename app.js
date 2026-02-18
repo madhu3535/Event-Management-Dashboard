@@ -1,4 +1,5 @@
-let events = [];
+let events = JSON.parse(localStorage.getItem("events")) || [];
+
 
 function addEvent() {
 
@@ -46,4 +47,9 @@ function displayEvents() {
 
     container.appendChild(div);
   });
+  localStorage.setItem("events", JSON.stringify(events));
 }
+
+// load saved events on refresh
+displayEvents();
+
