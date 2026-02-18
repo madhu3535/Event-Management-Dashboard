@@ -1,0 +1,15 @@
+body {
+  font-family: Arial;
+  margin: 40px;
+}
+
+input, button {
+  margin: 5px;
+  padding: 8px;
+}
+
+.event-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
